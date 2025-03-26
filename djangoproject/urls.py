@@ -25,6 +25,7 @@ urlpatterns = [
     
     path('admin/', admin.site.urls),
     path('', include('ThreadNet.urls')),
+    path('ThreadNet/', include('ThreadNet.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
     path('', home, name='home'),
     
