@@ -5,6 +5,7 @@ from django.shortcuts import get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login
 from django.db.models import Q
+from django.http import HttpResponse
 
 def index(request):
     return render(request, 'index.html')
@@ -88,3 +89,6 @@ def tweet_search(request):
     else:
         tweets = Tweet.objects.none()    
     return render(request, 'tweet_search.html', {'tweets': tweets, 'query': query})
+
+def home(request):
+    return HttpResponse("Welcome to ThreadNet!")
