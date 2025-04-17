@@ -1,2 +1,2 @@
 https://django-project-x49e.onrender.com/ 
-# tap to open the project
+# tap ☝ to open the project
